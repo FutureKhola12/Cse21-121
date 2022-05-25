@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Movie Hub</title>
+	<link rel = "shortcut icon" type = "image" href = "Images/icon.png">
+	<link rel = "stylesheet" href = "styleContact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+	.newslettercontentbody{
+		padding: 20px;
+		background-color: #E5E3E3;
+		top: 15%;
+		padding-top: 20px;
+		width: 50%;
+		left: 26.5%;
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+		position: absolute;
+		color: #191919;
+		border-radius: 42px;
+		box-shadow: 5px 11px 29px #0D3B6B;
+	}
+
+	h2{
+		text-align: center;
+		font-family: "Times New Roman", Times, serif;
+		font-size: 34px;
+	}
+
+	input[type=text]{
+		width: 100%;
+		margin: 9px 0px;
+		display: inline-block;
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 8px;
+	}
+
+	.Country{
+		width: 100%;
+		margin: 2px 0px;
+		padding: 0px;
+		justify-content: center;
+		display: flex;
+		height: 27px;
+	}
+
+	.Region{
+		width: 100%;
+		margin: 6px 0px;
+		padding: 0px;
+		justify-content: center;
+		display: flex;
+		height: 30px;
+	}
+
+	h4{
+		text-align: center;
+		line-height: 30px;
+		font-weight: lighter;
+	}
+
+	.newsletters{
+		width: 100%;
+		margin: 8px 0px;
+		padding: 0px;
+		justify-content: center;
+		text-align: center;
+		word-spacing: 7px;
+	}
+
+	.Subscribebutton{
+		text-align: center:
+	}
+
+	.Subscribebutton a{
+		text-decoration: none;
+		border: 2px solid #FFF;
+		border-radius: 15px;
+		font-size: 19px;
+		padding: 10px 25px;
+		color: #F7F6F6;
+		display: inline-block;
+		font-family: poppins;
+		text-transform: uppercase;
+		 letter-spacing: .5px;
+		 margin-left: 39.5%;
+		 background: rgba(0,0,0,0.7);
+	}
+
+	.Subscribebutton a:hover {
+	background: rgba(0,0,0,0.7);
+	color: rgba(16,148,224);
+	transition: 2s;
+	border-color: #262626;
+	}
+
+	@media screen and ( max-width: 710px) {
+		footer {
+			margin-top: 65px;
+		}
+
+		.Subscribebutton {
+			margin-right: 128px;
+		}
+
+		.newsletters {
+			font-size: 11px;
+			padding: 0px;
+		}
+
+		.newslettercontentbody {
+			margin-right: 20px;
+			max-width: 57%;
+		}
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<nav>
+			<div class = "logo">
+					<p>MOVIE HUB</p>
+			</div>
+
+			<ul>
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "Categories.html">Categories</a></li>
+				<li><a href = "Feedback.html">Feedback</a></li>
+				<li><a href = "Upcoming.html">Upcoming</a></li>
+				<li><a class = "active" href = "#">Contact</a></li>
+			</ul>
+	</nav>
+
+	<section>
+		<form action = "action_page.php">
+				<div class = "newslettercontentbody">
+					<h2>Subscribe to Movie Hub newsletters</h2><br>
+
+						<form>
+							<input type = "text" name = "first_name" placeholder = "Enter email" />
+
+							<input type = "text" name = "first_name" placeholder = "Enter name" />
+
+							<input type = "text" name = "last_name" placeholder = "Enter surname" />
+
+							<h4 style = "text-align: center; line-height: 20px; font-weight: lighter;"><b>Country</b></h4>
+							<div class = "Country">
+							<select name = "dropdown">
+									<option value = "Botswana" selected>Botswana</option>
+									<option value = "South Africa" selected>South Africa</option>
+									<option value = "Angola" selected>Angola</option>
+									<option value = "Mozambique" selected>Mozambique</option>
+									<option value = "Germany" selected>Germany</option>
+									<option value = "France" selected>Italy</option>
+									<option value = "United Kingdom" selected>United Kingdom</option>
+									<option value = "Poland" selected>Poland</option>
+									<option value = "Sweden" selected>Sweden</option>
+									<option value = "Croatia" selected>Croatia</option>
+							</select>
+							</div>
+
+							<h4 style = "margin-bottom: -9.5px; font-family: Roboto, Arial, sans-serif;"><b>Region</b></h4>
+
+							<div class = "Region">
+							<select name = "dropdown">
+									<option value = "Northern Africa" selected>Northern Africa</option>
+									<option value = "Eastern Africa" selected>Eastern Africa</option>
+									<option value = "Middle Africa" selected>Middle Africa</option>
+									<option value = "Southern Africa" selected>Southern Africa</option>
+									<option value = "Western Africa" selected>Western Africa</option>
+									<option value = "North Europe" selected>North Europe</option>
+									<option value = "West Europe" selected>West Europe</option>
+									<option value = "Central Europe" selected>Central Europe</option>
+									<option value = "South Europe" selected>South Europe</option>
+									<option value = "South East Europe" selected>South East Europe</option>
+							</select>
+							</div>
+
+
+						<h4 style = "margin-bottom: -4.5px; font-family: Roboto, Arial, sans-serif;"><b>Choose any newsletter of your choice</b></h4>
+
+
+							<div class = "newsletters">
+							<input type = "checkbox" name = "FutureofLondon" value  = "on"> ActionHub
+							<input type = "checkbox" name = "Londonist" value  = "on"> ComedyHub
+							<input type = "checkbox" name = "MyLondon" value  = "on"> HorrorHub
+							<input type = "checkbox" name = "WildLondon" value  = "on"> RomanceHub
+							</div>
+
+
+							<div class = "Subscribebutton" >
+									<br><br><a href = "thankyou.html">Subscribe</a>
+							</div>
+
+						</form>
+				</div>
+		</form>
+	</section>
+
+
+	<footer>
+			<div class = "footer-content">
+				<h3>Follow us</h3>
+				<ul class = "socials">
+						 <li><a href = "#"<i class = "fa fa-facebook"></i></a></li>
+						 <li><a href = "#"<i class = "fa fa-twitter"></i></a></li>
+						 <li><a href = "#"<i class = "fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<div = class = "footer-bottom">
+					<p>copyright &copy;2022 Movie Hub</p>
+			</div>
+	</footer>
+</body>
+</html>

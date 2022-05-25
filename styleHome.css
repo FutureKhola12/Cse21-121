@@ -1,0 +1,132 @@
+ * {
+	 margin: 0px;
+	 padding: 0px;
+	 font-family: Arial;
+ }
+ 
+ nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 60px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,1.7);
+	border-bottom; 1px solid #FFF;
+}
+
+nav .logo {
+	padding: 12px 30px;
+	line-height: 35px;
+	float: left;
+	font-family: Georgia, serif;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	font-style: italic;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0.5px 0px 0.5px 0px;
+	display: flex;
+}
+
+nav ul li a {
+	line-height: 55px;
+	color: #FFF;
+	padding: 12px 30px;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	background: yellow;
+	border-radius: 30px;
+	text-transform: uppercase;
+	color: #262626;
+}
+
+nav a.active {
+	text-transform: uppercase;
+	color: rgba(16,148,224);
+	transition: 2;
+	border-bottom: 4px solid white;
+	border-bottom-width: medium;
+	border-bottom-style: groove;
+}
+ 
+footer {
+	position: absolute;
+	min-height: 25px;
+	width: 100%;
+	background: rgba(0,0.1,7);
+	padding-top: 15px;
+	color: #FFF;
+	font-family: Arial;
+} 
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content h3 {
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: capitalize;
+	line-height: 4px;
+	text-transform: uppercase;
+	margin-top: 2px;
+}
+
+.socials {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 25px 0px 12px 7px;
+}
+
+.socials li {
+	margin: 0 15px;
+}
+
+.socials a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 35px;
+	letter-spacing: 15px;
+}
+
+.socials a i {
+	transition: color .4s ease;
+}
+
+.socials a:hover  {
+	color: orange;
+}
+
+.footer-bottom {
+	width:100%;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.footer-bottom p {
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+	margin-left: 1px;
+	padding-bottom: 1px;
+	margin-bottom: -7px;
+}
+
+ 
